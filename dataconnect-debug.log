@@ -1,0 +1,13 @@
+I0219 16:02:25.646273   29011 load.go:37] Reloading schema and connectors...
+I0219 16:02:25.676550   29011 control.go:59] [/emulator/src 299b] UpdateResources(): done
+Schema: sources: schema/schema.gql [2054B] 
+Connector "default": sources: connector/queries.gql [1836B] connector/mutations.gql [1212B] 
+I0219 16:02:25.687399   29011 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/tj/Development/Dataconnect-Experiment/src/functions/dataconnect-generated/js/default-connector"
+I0219 16:02:25.695060   29011 collector.go:107] schema extensions wrote into "/Users/tj/Development/Dataconnect-Experiment/src/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [264B] prelude.gql [65218B] main/query.gql [2126B] main/mutation.gql [6737B] main/implicit.gql [776B] main/input.gql [8611B] 
+I0219 16:02:25.695400   29011 collector.go:107] connector "default" javascriptSdk wrote into "/Users/tj/Development/Dataconnect-Experiment/src/functions/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [2023B] esm/index.esm.js [833B] esm/package.json [17B] index.cjs.js [971B] package.json [634B] README.md [11450B] 
+I0219 16:02:25.696372   29011 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+I0219 16:02:25.696467   29011 load.go:115] Finished reloading
+I0219 16:02:25.698666   29011 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I0219 16:02:25.699351   29011 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399

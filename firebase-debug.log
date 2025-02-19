@@ -1,0 +1,128 @@
+[debug] [2025-02-19T21:02:12.805Z] ----------------------------------------------------------------------
+[debug] [2025-02-19T21:02:12.805Z] Command:       /Users/tj/.nvm/versions/node/v18.18.0/bin/node /Users/tj/.nvm/versions/node/v18.18.0/bin/firebase emulators:start --import=./exportedData --export-on-exit=./exportedData --debug
+[debug] [2025-02-19T21:02:12.806Z] CLI Version:   13.31.1
+[debug] [2025-02-19T21:02:12.806Z] Platform:      darwin
+[debug] [2025-02-19T21:02:12.806Z] Node Version:  v18.18.0
+[debug] [2025-02-19T21:02:12.808Z] Time:          Wed Feb 19 2025 16:02:12 GMT-0500 (Eastern Standard Time)
+[debug] [2025-02-19T21:02:12.808Z] Env Overrides: FIRESTORE_EMULATOR_HOST
+[debug] [2025-02-19T21:02:12.808Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-19T21:02:12.887Z] Object "/emulators/firestore" in "firebase.json" has unknown property: {"additionalProperty":"import"}
+[debug] [2025-02-19T21:02:12.889Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-19T21:02:12.889Z] > authorizing via signed-in user (thomas.mcgee@lucidexgroup.com)
+[debug] [2025-02-19T21:02:12.925Z] openjdk version "18.0.2" 2022-07-19
+
+[debug] [2025-02-19T21:02:12.925Z] OpenJDK Runtime Environment Homebrew (build 18.0.2+0)
+OpenJDK 64-Bit Server VM Homebrew (build 18.0.2+0, mixed mode, sharing)
+
+[debug] [2025-02-19T21:02:12.928Z] Parsed Java major version: 18
+[info] i  emulators: Starting emulators: functions, firestore, dataconnect, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, dataconnect, extensions"}}
+[debug] [2025-02-19T21:02:12.928Z] Checked if tokens are valid: true, expires at: 1740001594709
+[debug] [2025-02-19T21:02:12.928Z] Checked if tokens are valid: true, expires at: 1740001594709
+[debug] [2025-02-19T21:02:12.929Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/dataconnect-experiment [none]
+[debug] [2025-02-19T21:02:13.736Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/dataconnect-experiment 200
+[debug] [2025-02-19T21:02:13.736Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/dataconnect-experiment {"projectNumber":"733259622824","projectId":"dataconnect-experiment","lifecycleState":"ACTIVE","name":"Dataconnect Experiment","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-02-18T13:41:47.739229Z","parent":{"type":"organization","id":"609628154892"}}
+[debug] [2025-02-19T21:02:14.583Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-02-19T21:02:14.583Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-02-19T21:02:14.583Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-02-19T21:02:14.584Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-02-19T21:02:14.584Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] ⚠  emulators: It seems that you are running multiple instances of the emulator suite for project dataconnect-experiment. This may result in unexpected behavior. 
+[debug] [2025-02-19T21:02:14.586Z] [hub] writing locator at /var/folders/zw/1f2mryks1ld68k8wk3z67tth0000gn/T/hub-dataconnect-experiment.json
+[debug] [2025-02-19T21:02:14.588Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-02-19T21:02:14.939Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-02-19T21:02:14.939Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-02-19T21:02:14.939Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-02-19T21:02:14.939Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2025-02-19T21:02:14.941Z] defaultcredentials: writing to file /Users/tj/.config/firebase/thomas_mcgee_lucidexgroup.com_application_default_credentials.json
+[debug] [2025-02-19T21:02:14.942Z] Setting GAC to /Users/tj/.config/firebase/thomas_mcgee_lucidexgroup.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/tj/.config/firebase/thomas_mcgee_lucidexgroup.com_application_default_credentials.json"}}
+[debug] [2025-02-19T21:02:14.942Z] Checked if tokens are valid: true, expires at: 1740001594709
+[debug] [2025-02-19T21:02:14.942Z] Checked if tokens are valid: true, expires at: 1740001594709
+[debug] [2025-02-19T21:02:14.942Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dataconnect-experiment/adminSdkConfig [none]
+[debug] [2025-02-19T21:02:15.864Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dataconnect-experiment/adminSdkConfig 200
+[debug] [2025-02-19T21:02:15.865Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dataconnect-experiment/adminSdkConfig {"projectId":"dataconnect-experiment","storageBucket":"dataconnect-experiment.firebasestorage.app"}
+[warn] ⚠  firestore: Cloud Firestore Emulator does not support multiple databases yet. {"metadata":{"emulator":{"name":"firestore"},"message":"Cloud Firestore Emulator does not support multiple databases yet."}}
+[warn] ⚠  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
+[warn] ⚠  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2025-02-19T21:02:15.888Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-02-19T21:02:15.888Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-02-19T21:02:15.888Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/tj/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","dataconnect-experiment","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/tj/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"dataconnect-experiment\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2025-02-19T21:02:16.236Z] Feb 19, 2025 4:02:16 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 19, 2025 4:02:16 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-02-19T21:02:16.244Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2025-02-19T21:02:16.244Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[warn] ⚠  dataconnect: 'firebase.json#emulators.dataconnect.dataDir' is set and `--import` flag was passed. This will overwrite any data saved from previous runs. {"metadata":{"emulator":{"name":"dataconnect"},"message":"'firebase.json#emulators.dataconnect.dataDir' is set and `--import` flag was passed. This will overwrite any data saved from previous runs."}}
+[info] i  dataconnect: Importing data from /Users/tj/Development/Dataconnect-Experiment/src/exportedData/dataconnect_export {"metadata":{"emulator":{"name":"dataconnect"},"message":"Importing data from /Users/tj/Development/Dataconnect-Experiment/src/exportedData/dataconnect_export"}}
+[info] i  dataconnect: downloading dataconnect-emulator-1.8.1... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-1.8.1..."}}
+[debug] [2025-02-19T21:02:19.490Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.8.1 
+[debug] [2025-02-19T21:02:19.601Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.8.1 200
+[debug] [2025-02-19T21:02:19.602Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.8.1 [stream]
+[info] i  dataconnect: Removing outdated emulator files: dataconnect-emulator-1.7.7 {"metadata":{"emulator":{"name":"dataconnect"},"message":"Removing outdated emulator files: dataconnect-emulator-1.7.7"}}
+[debug] [2025-02-19T21:02:25.546Z] I0219 16:02:25.543735   29007 control.go:59] [/emulator/src df7e] UpdateResources(): done
+Schema: sources: schema/schema.gql [2054B] 
+Connector "default": sources: connector/mutations.gql [1212B] connector/queries.gql [1836B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0219 16:02:25.543735   29007 control.go:59] [/emulator/src df7e] UpdateResources(): done\nSchema: sources: schema/schema.gql [2054B] \nConnector \"default\": sources: connector/mutations.gql [1212B] connector/queries.gql [1836B] \n"}}
+[debug] [2025-02-19T21:02:25.546Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-02-19T21:02:25.546Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-02-19T21:02:25.546Z] Starting Data Connect Emulator with command {"binary":"/Users/tj/.cache/firebase/emulators/dataconnect-emulator-1.8.1","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=/Users/tj/Development/Dataconnect-Experiment/src/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/Users/tj/.cache/firebase/emulators/dataconnect-emulator-1.8.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=/Users/tj/Development/Dataconnect-Experiment/src/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[info] i  dataconnect: Started up Postgres server, listening on {"address":"127.0.0.1","family":"IPv4","port":5432} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Started up Postgres server, listening on {\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":5432}"}}
+[debug] [2025-02-19T21:02:25.554Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2025-02-19T21:02:25.554Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2025-02-19T21:02:25.554Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"src","maxOpenConnections":1}
+[debug] [2025-02-19T21:02:25.555Z] *** [apiv2] error from fetch(http://127.0.0.1:9399/emulator/configure, {"headers":{},"method":"POST","body":"{\"connectionString\":\"postgres://127.0.0.1:5432/fdcdb?sslmode=disable\",\"database\":\"fdcdb\",\"serviceId\":\"src\",\"maxOpenConnections\":1}"}): FetchError: request to http://127.0.0.1:9399/emulator/configure failed, reason: connect ECONNREFUSED 127.0.0.1:9399
+[debug] [2025-02-19T21:02:25.555Z] [Data Connect] Retrying connectToPostgress call (1 of 3 attempts): FirebaseError: Data Connect emulator: undefined
+[debug] [2025-02-19T21:02:25.647Z] I0219 16:02:25.646273   29011 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0219 16:02:25.646273   29011 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2025-02-19T21:02:25.676Z] I0219 16:02:25.676550   29011 control.go:59] [/emulator/src 299b] UpdateResources(): done
+Schema: sources: schema/schema.gql [2054B] 
+Connector "default": sources: connector/queries.gql [1836B] connector/mutations.gql [1212B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0219 16:02:25.676550   29011 control.go:59] [/emulator/src 299b] UpdateResources(): done\nSchema: sources: schema/schema.gql [2054B] \nConnector \"default\": sources: connector/queries.gql [1836B] connector/mutations.gql [1212B] \n"}}
+[debug] [2025-02-19T21:02:25.687Z] I0219 16:02:25.687399   29011 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/tj/Development/Dataconnect-Experiment/src/functions/dataconnect-generated/js/default-connector"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0219 16:02:25.687399   29011 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"/Users/tj/Development/Dataconnect-Experiment/src/functions/dataconnect-generated/js/default-connector\"\n"}}
+[debug] [2025-02-19T21:02:25.695Z] I0219 16:02:25.695060   29011 collector.go:107] schema extensions wrote into "/Users/tj/Development/Dataconnect-Experiment/src/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [264B] prelude.gql [65218B] main/query.gql [2126B] main/mutation.gql [6737B] main/implicit.gql [776B] main/input.gql [8611B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0219 16:02:25.695060   29011 collector.go:107] schema extensions wrote into \"/Users/tj/Development/Dataconnect-Experiment/src/dataconnect/.dataconnect/schema\"\nGenerated sources: main/relation.gql [264B] prelude.gql [65218B] main/query.gql [2126B] main/mutation.gql [6737B] main/implicit.gql [776B] main/input.gql [8611B] \n"}}
+[debug] [2025-02-19T21:02:25.695Z] I0219 16:02:25.695400   29011 collector.go:107] connector "default" javascriptSdk wrote into "/Users/tj/Development/Dataconnect-Experiment/src/functions/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [2023B] esm/index.esm.js [833B] esm/package.json [17B] index.cjs.js [971B] package.json [634B] README.md [11450B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0219 16:02:25.695400   29011 collector.go:107] connector \"default\" javascriptSdk wrote into \"/Users/tj/Development/Dataconnect-Experiment/src/functions/dataconnect-generated/js/default-connector\"\nGenerated sources: index.d.ts [2023B] esm/index.esm.js [833B] esm/package.json [17B] index.cjs.js [971B] package.json [634B] README.md [11450B] \n"}}
+[debug] [2025-02-19T21:02:25.696Z] I0219 16:02:25.696372   29011 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0219 16:02:25.696372   29011 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation\n"}}
+[debug] [2025-02-19T21:02:25.696Z] I0219 16:02:25.696467   29011 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0219 16:02:25.696467   29011 load.go:115] Finished reloading\n"}}
+[debug] [2025-02-19T21:02:25.698Z] I0219 16:02:25.698666   29011 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0219 16:02:25.698666   29011 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399\n"}}
+[debug] [2025-02-19T21:02:25.699Z] I0219 16:02:25.699351   29011 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0219 16:02:25.699351   29011 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399\n"}}
+[debug] [2025-02-19T21:02:27.556Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2025-02-19T21:02:27.557Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2025-02-19T21:02:27.557Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"src","maxOpenConnections":1}
+[debug] [2025-02-19T21:02:27.585Z] Frontend message 
+[debug] [2025-02-19T21:02:27.586Z] Backend message AuthenticationResponse
+[debug] [2025-02-19T21:02:27.587Z] Backend message ParameterStatus
+[debug] [2025-02-19T21:02:27.587Z] Backend message ReadyForQuery
+[debug] [2025-02-19T21:02:27.588Z] Frontend message Query
+[debug] [2025-02-19T21:02:27.595Z] Importing from /Users/tj/Development/Dataconnect-Experiment/src/Users/tj/Development/Dataconnect-Experiment/src/exportedData/dataconnect_export/postgres.tar.gz
+[debug] [2025-02-19T21:02:27.595Z] Error: ENOENT: no such file or directory, open '/Users/tj/Development/Dataconnect-Experiment/src/Users/tj/Development/Dataconnect-Experiment/src/exportedData/dataconnect_export/postgres.tar.gz'
+    at Object.openSync (node:fs:603:3)
+    at Object.readFileSync (node:fs:471:35)
+    at PostgresServer.getDb (/Users/tj/.nvm/versions/node/v18.18.0/lib/node_modules/firebase-tools/lib/emulator/dataconnect/pgliteServer.js:94:31)
+    at async Object.onMessage (/Users/tj/.nvm/versions/node/v18.18.0/lib/node_modules/firebase-tools/lib/emulator/dataconnect/pgliteServer.js:55:32)
+[error] 
+[error] Error: An unexpected error has occurred.
