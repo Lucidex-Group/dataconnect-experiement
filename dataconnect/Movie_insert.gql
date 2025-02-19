@@ -1,0 +1,7 @@
+# This is a file for you to write an un-named mutation. 
+# Only one un-named mutation is allowed per file.
+mutation {
+  movie_insert(
+    data: {id: "11111111222233334444555555555555", genre: "Action", imageUrl: "https://m.media-amazon.com/images/I/612NgmU+AoL._AC_SY879_.jpg", title: "Die Hard"}
+  )
+}
